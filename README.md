@@ -102,6 +102,13 @@ The **Support Vector Machine (SVM)** achieved the best overall performance with 
 
 ---
 
+## 📘 What I Learned
+- How to structure an end-to-end machine learning workflow from EDA to evaluation
+- The importance of feature correlation analysis in model performance
+- How different classifiers behave on high-dimensional medical data
+- How proper evaluation (confusion matrix, precision, recall) matters beyond accuracy
+
+
 ## ▶️ How to Run the Project
 ```bash
 pip install -r requirements.txt
