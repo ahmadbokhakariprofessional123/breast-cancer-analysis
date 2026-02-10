@@ -30,15 +30,22 @@ These steps helped reduce noise, avoid overfitting, and improve model stability.
 ---
 
 ## 📈 Exploratory Data Analysis (EDA)
-EDA was performed to understand feature distributions, correlations, and class differences:
+EDA was performed to understand feature distributions, correlations, and class differences.
 
-- Visualized diagnosis distribution using bar and pie charts
-- Compared malignant vs benign cases using boxplots and histograms
-- Generated correlation heatmaps to identify strongly related features
-- Used pairplots to explore feature separability
-- Applied K-Means clustering, which showed clear separation between the two classes
+### Diagnosis Distribution
+The dataset contains more benign cases than malignant cases, indicating a mild class imbalance.
 
-These insights guided feature selection and model choice.
+![Diagnosis Distribution](images/Bar%20Chart.png)
+
+### Feature Correlation
+Strong correlations were observed between size-related features such as **radius**, **perimeter**, and **area**, which informed feature selection and dimensionality reduction.
+
+![Correlation Heatmap](images/heatmap.png)
+
+### Unsupervised Clustering
+K-Means clustering (after dimensionality reduction) showed a clear separation between malignant and benign cases, suggesting that the underlying data structure supports effective classification.
+
+![K-Means Clustering](images/K%20means%20Clustering.png)
 
 ---
 
@@ -56,11 +63,18 @@ The following classification models were implemented and evaluated:
 
 ---
 
+## 📈 Model Evaluation
+The **Support Vector Machine (SVM)** achieved the best overall performance with **97% accuracy**, demonstrating strong precision and recall across both benign and malignant cases.
+
+![Confusion Matrix – SVM](images/confusion%20matrix.png)
+
+---
+
 ## 🏆 Key Results
-- **SVM and Logistic Regression** achieved the highest accuracy (97%)
-- Models showed strong precision and recall, indicating reliable classification
-- Feature correlations revealed that radius, perimeter, and area were highly influential
-- Clustering analysis confirmed natural separation between malignant and benign cases
+- SVM and Logistic Regression achieved the highest accuracy (97%)
+- Models demonstrated strong generalisation on unseen test data
+- Feature correlations highlighted the importance of size-related attributes
+- Clustering analysis confirmed natural separability between classes
 
 ---
 
@@ -68,23 +82,23 @@ The following classification models were implemented and evaluated:
 **Current limitations:**
 - Limited feature engineering
 - Partial hyperparameter tuning
-- Class imbalance may affect some models
-- Cross-validation not applied to all classifiers
+- Mild class imbalance
+- Cross-validation not applied uniformly across all models
 
 **Potential improvements:**
 - Apply feature engineering techniques
 - Use GridSearchCV for hyperparameter tuning
-- Apply cross-validation across all models
+- Apply cross-validation to all models
 - Explore ensemble and advanced models
 
 ---
 
 ## 🛠️ Tools & Technologies
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
-- Jupyter Notebook
+- Python  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
+- Jupyter Notebook  
 
 ---
 
@@ -92,3 +106,4 @@ The following classification models were implemented and evaluated:
 ```bash
 pip install -r requirements.txt
 jupyter notebook breast-cancer-analysis.ipynb
+
