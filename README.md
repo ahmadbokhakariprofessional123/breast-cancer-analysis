@@ -1,5 +1,11 @@
 # Breast Cancer Classification using Machine Learning
 
+## 🔍 Project Summary
+- **Dataset:** UCI Breast Cancer Wisconsin (569 samples, 30 features)
+- **Models:** Logistic Regression, SVM, Random Forest, KNN, Decision Tree, Naive Bayes
+- **Best Result:** SVM achieved 97% accuracy with strong precision and recall
+
+
 ## 📌 Project Overview
 This project applies machine learning techniques to classify breast cancer tumors as **Malignant** or **Benign** using diagnostic cell features. Multiple classification models were trained and evaluated to compare performance, with the aim of demonstrating how data analytics and predictive modeling can support **early cancer detection**.
 
