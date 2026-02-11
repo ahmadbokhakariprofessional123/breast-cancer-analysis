@@ -41,7 +41,7 @@ EDA was performed to understand feature distributions, correlations, and class d
 ### Diagnosis Distribution
 The dataset contains more benign cases than malignant cases, indicating a mild class imbalance.
 
-![Diagnosis Distribution](images/Bar%20Chart.png)
+![Diagnosis Distribution](image/hab/Bar%20Chart.png)
 
 ### Feature Correlation
 Strong correlations were observed between size-related features such as **radius**, **perimeter**, and **area**, which informed feature selection and dimensionality reduction.
