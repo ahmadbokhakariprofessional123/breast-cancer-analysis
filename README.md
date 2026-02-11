@@ -41,17 +41,17 @@ EDA was performed to understand feature distributions, correlations, and class d
 ### Diagnosis Distribution
 The dataset contains more benign cases than malignant cases, indicating a mild class imbalance.
 
-![Diagnosis Distribution](image/hab/Bar%20Chart.png)
+![Diagnosis Distribution](image/Bar%20Chart.png)
 
 ### Feature Correlation
 Strong correlations were observed between size-related features such as **radius**, **perimeter**, and **area**, which informed feature selection and dimensionality reduction.
 
-![Correlation Heatmap](images/heatmap.png)
+![Correlation Heatmap](image/heatmap.png)
 
 ### Unsupervised Clustering
 K-Means clustering (after dimensionality reduction) showed a clear separation between malignant and benign cases, suggesting that the underlying data structure supports effective classification.
 
-![K-Means Clustering](images/K%20means%20Clustering.png)
+![K-Means Clustering](image/K%20means%20Clustering.png)
 
 ---
 
@@ -72,7 +72,7 @@ The following classification models were implemented and evaluated:
 ## 📈 Model Evaluation
 The **Support Vector Machine (SVM)** achieved the best overall performance with **97% accuracy**, demonstrating strong precision and recall across both benign and malignant cases.
 
-![Confusion Matrix – SVM](images/confusion%20matrix.png)
+![Confusion Matrix – SVM](image/confusion%20matrix.png)
 
 ---
 
