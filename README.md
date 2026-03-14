@@ -7,7 +7,13 @@
 
 
 ## 📌 Project Overview
-This project applies machine learning techniques to classify breast cancer tumors as **Malignant** or **Benign** using diagnostic cell features. Multiple classification models were trained and evaluated to compare performance, with the aim of demonstrating how data analytics and predictive modeling can support **early cancer detection**.
+Breast cancer is one of the most common cancers worldwide, and early detection significantly increases survival rates. Machine learning techniques can assist medical professionals by analysing diagnostic measurements and identifying patterns associated with malignant tumors.
+
+The goal of this project is to develop predictive machine learning models capable of classifying tumors as malignant or benign using diagnostic features extracted from cell nuclei. The project evaluates multiple classification algorithms and identifies the most influential features that contribute to accurate cancer detection.
+
+By comparing model performance and analysing feature importance, this project demonstrates how predictive analytics can support early-stage cancer diagnosis and assist clinical decision-making.
+
+**early cancer detection**.
 
 ---
 
