@@ -24,7 +24,7 @@ By comparing model performance and analysing feature importance, this project de
 
 Each feature represents characteristics of cell nuclei, such as radius, texture, perimeter, and smoothness.
 
----
+
 
 ## 🔧 Data Preprocessing
 The dataset is relatively clean, but several preprocessing steps were applied:
@@ -58,7 +58,7 @@ K-Means clustering (after dimensionality reduction) showed a clear separation be
 
 ![K-Means Clustering](image/K%20means%20Clustering.png)
 
----
+
 
 ## 🤖 Models Trained
 The following classification models were implemented and evaluated:
@@ -72,14 +72,14 @@ The following classification models were implemented and evaluated:
 | Decision Tree | 94% |
 | Naive Bayes | 93% |
 
----
+
 
 ## 📈 Model Evaluation
 The **Support Vector Machine (SVM)** achieved the best overall performance with **97% accuracy**, demonstrating strong precision and recall across both benign and malignant cases.
 
 ![Confusion Matrix – SVM](image/confusion%20matrix.png)
 
----
+
 
 ## 🏆 Key Results
 - SVM and Logistic Regression achieved the highest accuracy (97%)
@@ -102,7 +102,7 @@ The **Support Vector Machine (SVM)** achieved the best overall performance with 
 - Apply cross-validation to all models
 - Explore ensemble and advanced models
 
----
+
 
 ## 🛠️ Tools & Technologies
 - Python  
@@ -111,7 +111,7 @@ The **Support Vector Machine (SVM)** achieved the best overall performance with 
 - Scikit-learn  
 - Jupyter Notebook  
 
----
+
 
 ## 📘 What I Learned
 - How to structure an end-to-end machine learning workflow from EDA to evaluation
