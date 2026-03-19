@@ -11,8 +11,16 @@ The project demonstrates an **end-to-end machine learning workflow**, including:
 - Saving the trained model
 - Deploying the model as a **REST API using FastAPI**
 - **Containerizing the application using Docker** for reproducible deployment
+- Interactive UI using Streamlit
 
 The deployed API allows users to submit tumor feature measurements and receive real-time cancer predictions.
+
+----
+
+🚀 Live Demo
+
+👉 Try the app here:
+https://breast-cancer-analysis-mrmwxyczcghssgnnjwmfug.streamlit.app/
 
 ---
 
