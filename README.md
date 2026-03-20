@@ -239,6 +239,36 @@ http://localhost:8000/docs
 
 ---
 
+# ⚙️ CI/CD Pipeline
+
+This project integrates **GitHub Actions** to implement a Continuous Integration (CI) pipeline, enabling automated validation of the machine learning system.
+
+### 🔄 Pipeline Overview
+
+The CI pipeline runs automatically on every push and pull request and performs the following steps:
+
+- Sets up a clean Python environment
+- Installs dependencies from `requirements.txt`
+- Validates the project by running automated checks
+
+### ⚙️ Workflow Configuration
+
+The pipeline is defined in:
+.github/workflows/ci.yml
+
+It uses a virtual environment to simulate a clean system, ensuring that all required dependencies are properly listed in `requirements.txt`.
+
+### ✅ Benefits
+
+- Detects errors early during development  
+- Ensures reproducibility across environments  
+- Prevents broken updates from being pushed  
+- Improves overall code reliability  
+
+This setup reflects real-world machine learning engineering practices, where automated testing and validation are essential before deployment.
+
+---
+
 # 🛠 Technologies Used
 
 - Python
