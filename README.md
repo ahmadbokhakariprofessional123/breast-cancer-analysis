@@ -253,8 +253,8 @@ The CI pipeline runs automatically on every push and pull request and performs t
 
 ### ⚙️ Workflow Configuration
 
-The pipeline is defined in:
-.github/workflows/ci.yml
+The pipeline is defined in
+ .github/workflows/ci.yml
 
 It uses a virtual environment to simulate a clean system, ensuring that all required dependencies are properly listed in `requirements.txt`.
 
