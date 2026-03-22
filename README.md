@@ -239,6 +239,69 @@ http://localhost:8000/docs
 
 ---
 
+## ☁️ Cloud Deployment (AWS EC2)
+
+This application has been deployed on **Amazon Web Services (AWS EC2)**, making the machine learning model accessible as a live web application.
+
+### 🚀 Deployment Overview
+
+The deployment process involved:
+
+* Launching an **EC2 instance (Ubuntu)**
+* Installing required dependencies (Python, pip, Git)
+* Cloning the project repository from GitHub
+* Installing project dependencies using `requirements.txt`
+* Running the Streamlit application on the server
+
+---
+
+### 🌐 Live Application
+
+👉 Access the deployed application here:
+
+```
+http://51.21.194.125:8501/
+```
+
+---
+
+### 🔐 Network Configuration
+
+To enable public access, AWS **security groups** were configured with the following inbound rules:
+
+* **Port 22 (SSH):** Secure remote access to the server
+* **Port 8501 (Custom TCP):** Allows users to access the Streamlit web app
+
+---
+
+### ⚙️ Production Setup
+
+To ensure reliability and continuous uptime:
+
+* A **systemd service** was created to run the Streamlit application in the background
+* The service is configured to:
+
+  * Start automatically when the server boots
+  * Restart automatically if the application crashes
+
+This ensures the application remains available without manual intervention.
+
+---
+
+### 🧠 Deployment Architecture
+
+```
+User → Web Browser → Streamlit UI → Machine Learning Model
+```
+
+---
+
+### 📌 Notes
+
+* The application is hosted on a cloud virtual machine and is accessible globally
+* The deployment demonstrates real-world practices in **cloud computing, networking, and service management**
+
+
 # ⚙️ CI/CD Pipeline
 
 This project integrates **GitHub Actions** to implement a Continuous Integration (CI) pipeline, enabling automated validation of the machine learning system.
