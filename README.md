@@ -435,13 +435,76 @@ http://localhost:8000/docs
 
 # 🔮 Future Improvements
 
-Potential improvements include:
+While this project demonstrates a complete end-to-end machine learning workflow, several enhancements can be made to further improve scalability, performance, and production readiness.
 
-- Advanced feature engineering
-- Hyperparameter optimization
-- Ensemble models
-- Cloud deployment (AWS / GCP)
-- Building a user interface for tumor prediction
+### 🧠 Model Improvements
+
+* Perform advanced **hyperparameter tuning** (Grid Search / Random Search)
+* Explore **ensemble methods** to improve predictive performance
+* Incorporate additional feature engineering techniques
+* Evaluate model performance using cross-validation for better generalization
+
+---
+
+### ⚙️ Architecture Enhancements
+
+* Integrate the system into a proper **microservice architecture**:
+
+  ```text
+  Streamlit UI → FastAPI → ML Model
+  ```
+
+* Decouple frontend and backend to improve maintainability and scalability
+
+* Add support for batch predictions via API endpoints
+
+---
+
+### 🐳 Deployment & Infrastructure
+
+* Fully deploy the application using **Docker containers on AWS**
+* Use container orchestration tools such as **AWS ECS or Kubernetes**
+* Implement **CI/CD pipelines** for automated deployment and testing
+* Add environment configuration using `.env` files for better security
+
+---
+
+### 🌐 Web & User Experience
+
+* Configure **NGINX reverse proxy** to remove port-based URLs
+* Add a custom **domain name** (e.g., `yourapp.com`)
+* Enable **HTTPS (SSL certificates)** for secure communication
+* Improve UI/UX with better design and validation feedback
+
+---
+
+### 📊 Monitoring & Logging
+
+* Implement **logging** to track predictions and errors
+* Add monitoring tools (e.g., AWS CloudWatch) to track system performance
+* Create dashboards for usage analytics and model behavior
+
+---
+
+### 🔐 Security Enhancements
+
+* Add API authentication and rate limiting
+* Validate and sanitize user inputs more robustly
+* Secure API endpoints against misuse
+
+---
+
+### 📈 MLOps & Lifecycle Management
+
+* Implement **model versioning**
+* Add automated retraining pipelines
+* Track experiments using tools like MLflow
+* Monitor model drift over time
+
+---
+
+Overall, these improvements would transform the project into a **fully production-grade, scalable machine learning system**, aligned with real-world industry practices.
+
 
 ---
 
